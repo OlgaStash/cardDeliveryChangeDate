@@ -41,7 +41,7 @@ public class CardDeliveryChangeDateTest {
         $("[data-test-id='phone'] input").setValue(DataGenerate.generatePhone());
         $(".checkbox__box").click();
         $("[type='button'] [class=button__text]").click();
-        $("[class='notification__content']").shouldBe(visible, Duration.ofSeconds(20)).shouldHave(text("Успешно")).shouldHave(text("Встреча успешно запланирована на " + planningDate));
+        $("[class='notification__content']").shouldBe(visible).shouldHave(text("Успешно")).shouldHave(text("Встреча успешно запланирована на " + planningDate));
 
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(planningDate2);

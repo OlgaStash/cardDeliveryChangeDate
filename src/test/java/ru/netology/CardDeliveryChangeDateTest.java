@@ -15,17 +15,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static ru.netology.util.DataGenerate.generateDate;
 
 public class CardDeliveryChangeDateTest {
-    private Faker faker;
-
-    @BeforeEach
-    public void setUpAll() {
-
-        faker = new Faker(new Locale("ru"));
-    }
-
-    @Test
-    public void shouldDataGenerate() {
-    }
 
     @Test
     public void shouldSetForm() {
